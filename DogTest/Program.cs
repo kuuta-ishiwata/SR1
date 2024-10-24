@@ -10,18 +10,17 @@ namespace DogTest
     {
         static void Main(string[] args)
         {
-            Dog pochi = new Dog();
-            //最初の空腹状態を表示してみる
-            Console.WriteLine("空腹状態 : {0}", pochi.InHungry());
 
-            //pochiにエサを食べさせる
-            pochi.Eat();
-            Console.WriteLine("空腹状態 : {0}", pochi.InHungry());
+            Player player = new Player("ロト", 1);
+           // player.level = 99999;
+            Console.WriteLine("名前 : {0}", player.GetName());
+           Console.WriteLine("レベル : {0}", player.GetLevel());
 
-            //pochiを走らせる
-            pochi.Run();
-            Console.WriteLine("空腹状態 : {0}", pochi.InHungry());
+            player.Atttack();
+            player.Defense();
 
+            player.LevelUp();
+            Console.WriteLine("レベル : {0}", player.GetLevel());
 
             //一時停止
             Console.ReadLine();
