@@ -18,7 +18,7 @@ namespace DogTest
         {
             if(powerStatus)
             {
-                Console.WriteLine("{0}は、キャノン砲を撃った", name);
+                Console.WriteLine("{0}は、キャノン砲を撃った!", name);
             }
             else
             {

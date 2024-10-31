@@ -23,7 +23,7 @@ namespace DogTest
             }
             else
             {
-                Console.WriteLine("{0}は、電源Offなので爆弾当科は使えません..", name);
+                Console.WriteLine("{0}は、電源Offなので爆弾投下は使えません..", name);
             }
         }
 

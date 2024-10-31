@@ -27,11 +27,11 @@ namespace DogTest
             Console.WriteLine("------------");
 
             //タンクロボットをテストする
-            TankRobot tankRobot = new TankRobot("タンクロボット");
+            TankRobot tankRobot = new TankRobot("タンクロボ");
 
             Console.WriteLine("名前:{0}", tankRobot.GetName());
             Console.WriteLine("電源:{0}", tankRobot.GetPowerStatus());
-
+            tankRobot.ShootCannon();
             tankRobot.PowerOn();
             tankRobot.ShootCannon();
 
@@ -45,7 +45,7 @@ namespace DogTest
             //TankRobot 5体分の実体を作る
             for(int i = 0; i<tanks.Length;i++)
             {
-                tanks[i] = new TankRobot("タンクNo" + i);
+                tanks[i] = new TankRobot("タンクNo." + i);
             }
             for(int i = 0; i<tanks.Length;i++)
             {
