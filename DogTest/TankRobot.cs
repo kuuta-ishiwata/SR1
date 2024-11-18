@@ -8,22 +8,15 @@ namespace DogTest
 {
     internal class TankRobot : Robot
     {
-        public TankRobot(string name)
+        public TankRobot(string name) : base(name)
         {
-            this.name = name;
+            
         }
 
         //キャノン砲を撃つ
-        public void ShootCannon()
+        public override void Attack()
         {
-            if(powerStatus)
-            {
-                Console.WriteLine("{0}は、キャノン砲を撃った!", name);
-            }
-            else
-            {
-                Console.WriteLine("{0}は、電源Offなのでキャノン砲は使えません..", name);
-            }
+            Console.WriteLine("{0}は、キャノン砲を撃った!", name);
         }
 
 
