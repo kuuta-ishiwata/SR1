@@ -10,15 +10,12 @@ namespace DogTest
     {
         public TankRobot(string name) : base(name)
         {
-            
-        }
 
+        }
         //キャノン砲を撃つ
         public override void Attack()
         {
-            Console.WriteLine("{0}は、キャノン砲を撃った!", name);
+            Console.WriteLine("{0}は、キャノン砲を撃った!",name);
         }
-
-
     }
 }

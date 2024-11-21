@@ -10,15 +10,12 @@ namespace DogTest
     {
         public FlyingRobot(string name) : base(name)
         {
+
         }
-
-
         //爆弾を落とす
         public override void Attack()
         {
             Console.WriteLine("{0}は、爆弾を落とした!",name);
         }
-
-
     }
 }
