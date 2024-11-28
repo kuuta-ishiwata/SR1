@@ -13,28 +13,17 @@ namespace DogTest
         {
             List<int> numbers = new List<int>();
 
-            numbers.Add(3);
-            foreach (int number in numbers)
-            {
-                Console.WriteLine(number);
-            }
-            Console.WriteLine("---");
-
-            Console.ReadLine();
-
-            numbers.Add(7);
-            numbers.Add(2);
-            numbers.Add(1);
-            numbers.Add(5);
-
-            foreach (int number in numbers)
-            {
-                Console.WriteLine(number);
-            }
-
-            Console.WriteLine("---");
-
-            Console.ReadLine();
+            numbers.Add(-5);
+            numbers.Add(-4);
+            numbers.Add(-3);
+            numbers.Add(-2);
+            numbers.Add(-1);
+            numbers.Add(+1);
+            numbers.Add(+2);
+            numbers.Add(+3);
+            numbers.Add(+4);
+            numbers.Add(+5);
+           
 
             for(int i = 0; i < numbers.Count;i++)
             {
