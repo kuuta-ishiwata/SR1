@@ -13,24 +13,19 @@ namespace DogTest
         {
             List<int> numbers = new List<int>();
 
-            numbers.Add(-5);
-            numbers.Add(-4);
-            numbers.Add(-3);
-            numbers.Add(-2);
-            numbers.Add(-1);
-            numbers.Add(+1);
-            numbers.Add(+2);
-            numbers.Add(+3);
-            numbers.Add(+4);
-            numbers.Add(+5);
-           
+            Random random = new Random(Environment.TickCount);
+            
 
-            for(int i = 0; i < numbers.Count;i++)
+            for(int i  = 0;  i<10;i++)
             {
-                Console.WriteLine(numbers[i]);
+                numbers.Add(random.Next(-5,5+1));
             }
 
-            Console.WriteLine("---");
+           
+            foreach (int number in numbers)
+            {
+                Console.WriteLine(number);
+            }
             //一時停止
             Console.ReadLine();
         }
