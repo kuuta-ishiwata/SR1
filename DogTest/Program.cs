@@ -7,25 +7,31 @@ using System.Threading.Tasks;
 namespace DogTest
 {
 
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            List<int> numbers = new List<int>();
+            List<Robot> robots = new List<Robot>();
+            Random rand = new Random();
 
-            Random random = new Random(Environment.TickCount);
-            
-
-            for(int i  = 0;  i<10;i++)
+            for(int i = 0; i<15;i++)
             {
-                numbers.Add(random.Next(-5,5+1));
+                if(rand.Next(2) == 0)
+                {
+                     robots.Add(new FlyingRobot());
+                }
+                else
+                {
+                    robots.Add(new TnakRobot());
+                }
+
             }
 
-           
-            foreach (int number in numbers)
+            foreach(var robot in robots)
             {
-                Console.WriteLine(number);
+                robot.Attack();
             }
+
             //一時停止
             Console.ReadLine();
         }

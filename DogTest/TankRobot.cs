@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace DogTest
 {
-    internal class TankRobot : Robot
+    public class TnakRobot : Robot
     {
-        public TankRobot(string name) : base(name)
-        {
-
-        }
-        //キャノン砲を撃つ
         public override void Attack()
         {
-            Console.WriteLine("{0}は、キャノン砲を撃った!",name);
+            Console.WriteLine("タンクロボは,キャノン砲を撃った!");
         }
     }
+
 }

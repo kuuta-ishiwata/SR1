@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace DogTest
 {
-    internal class FlyingRobot : Robot
+    public class FlyingRobot : Robot
     {
-        public FlyingRobot(string name) : base(name)
-        {
-
-        }
-        //爆弾を落とす
         public override void Attack()
         {
-            Console.WriteLine("{0}は、爆弾を落とした!",name);
+            Console.WriteLine("空飛ぶロボは,爆弾を落とした");
         }
     }
+
 }
