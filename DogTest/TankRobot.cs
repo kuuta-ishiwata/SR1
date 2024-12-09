@@ -16,6 +16,7 @@ namespace DogTest
         public override void Attack()
         {
             Console.WriteLine("タンクロボは,キャノン砲を撃った!");
+
         }
     }
 

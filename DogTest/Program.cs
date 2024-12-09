@@ -22,7 +22,7 @@ namespace DogTest
                 }
                 else
                 {
-                    robots.Add(new TnakRobot());
+                    robots.Add(new TnakRobot("戦車"));
                 }
 
             }

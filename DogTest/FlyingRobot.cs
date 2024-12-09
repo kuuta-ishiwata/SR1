@@ -14,7 +14,9 @@ namespace DogTest
         }
         public override void Attack()
         {
+
             Console.WriteLine("空飛ぶロボは,爆弾を落とした");
+
         }
     }
 
