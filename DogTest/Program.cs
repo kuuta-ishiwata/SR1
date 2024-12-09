@@ -16,9 +16,9 @@ namespace DogTest
 
             for(int i = 0; i<15;i++)
             {
-                if(rand.Next(2) == 0)
+                if(rand.Next() == 0)
                 {
-                     robots.Add(new FlyingRobot());
+                     robots.Add(new FlyingRobot("爆撃機"));
                 }
                 else
                 {

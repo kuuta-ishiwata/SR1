@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace DogTest
 {
-    public abstract class Robot
+    internal class Robot
     {
-        public abstract void Attack();
+
+        protected string name;
+        public Robot(string name) 
+        {
+            this.name = name;
+        }
+
+
     }
 
 }
