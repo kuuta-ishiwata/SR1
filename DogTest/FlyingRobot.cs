@@ -15,7 +15,7 @@ namespace DogTest
         public override void Attack()
         {
 
-            Console.WriteLine("{0}は,爆弾を落とした");
+            Console.WriteLine("{0}は、爆弾を落とした",name);
 
         }
     }

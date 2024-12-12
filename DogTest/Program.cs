@@ -14,9 +14,9 @@ namespace DogTest
             List<Robot> robots = new List<Robot>();
             Random rand = new Random();
 
-            for(int i = 0; i<15;i++)
+            for(int i = 0; i < 15;i++)
             {
-                if(rand.NextDouble() == 0.5)
+                if(rand.NextDouble() < 0.5)
                 {
                      robots.Add(new FlyingRobot("爆撃機"));
                 }
@@ -27,7 +27,7 @@ namespace DogTest
 
             }
 
-            foreach(var robot in robots)
+            foreach(Robot robot in robots)
             {
                 robot.Attack();
             }
