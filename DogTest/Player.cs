@@ -10,17 +10,23 @@ namespace DogTest
 
     internal class Player
     {
-         Item item2;
-        public Player(Item item)
+        List<Item> items = new List<Item>();
+        public Player()
         {
-            item2 = item;
+            items = new List<Item>();
+        }
+
+        public virtual void AddItem(Item item)
+        {
+            items.Add(item);
         }
 
 
-
-        public virtual void UseItem()
+        public  void UseItem()
         {
-            item2.Use();
+            items[0].Use();
+            items[1].Use();
+            items[2].Use();
         }
 
     }
