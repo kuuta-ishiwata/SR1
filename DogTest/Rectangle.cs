@@ -19,7 +19,7 @@ namespace DogTest
             area = width * height;
         }
 
-        public void Draw()
+        public override void Draw()
         {
             Console.WriteLine("□");
         }
